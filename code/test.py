@@ -7,11 +7,11 @@ def get_labels(file_path):
     with open(file_path, 'r') as file:
         labels = file.readlines()
     return [label.strip() for label in labels]
-model_path = "./model/MIDAS-finetune"
+model_path = "./model/IDA-XMM-finetune"
 
 # Load the model and tokenizer
 model = BertForSequenceClassification.from_pretrained(model_path)
-tokenizer = BertTokenizer.from_pretrained('./model/MIDAS-tokenizer')
+tokenizer = BertTokenizer.from_pretrained('./model/IDA-XMM-tokenizer')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 

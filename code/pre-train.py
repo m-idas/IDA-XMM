@@ -7,7 +7,7 @@ EPOCHS=100
 BATCH=8
 # Load the model and tokenizer
 model_name = 'bert'
-tokenizer = BertTokenizer.from_pretrained('./model/MIDAS-tokenizer')
+tokenizer = BertTokenizer.from_pretrained('./model/IDA-XMM-tokenizer')
 model = BertForMaskedLM.from_pretrained(model_name)
 model.train()
 
@@ -40,5 +40,5 @@ for epoch in range(num_epochs):
 
     print(f'Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}')
 #save model
-model.save_pretrained('./model/MIDAS-pretrained')
+model.save_pretrained('./model/IDA-XMM-pretrained')
 

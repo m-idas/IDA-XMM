@@ -11,8 +11,8 @@ def get_labels(file_path):
         labels = file.readlines()
     return [label.strip() for label in labels]
 
-model_name = './model/MIDAS-pretrained'
-tokenizer = BertTokenizer.from_pretrained('./model/MIDAS-tokenizer')
+model_name = './model/IDA-XMM-pretrained'
+tokenizer = BertTokenizer.from_pretrained('./model/IDA-XMM-tokenizer')
 model = BertForSequenceClassification.from_pretrained(model_name, num_labels=K)  
 
 
