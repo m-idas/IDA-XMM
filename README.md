@@ -1,5 +1,5 @@
 ## Env
-```
+```bash
 pip install transformers torch
 ```
 
