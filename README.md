@@ -1,4 +1,4 @@
-## Env
+## Running environment
 ```bash
 pip install transformers torch
 ```
