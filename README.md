@@ -1,7 +1,5 @@
 ## Quick Start
-
-```shell
+1. Model pre-train
+```
 python pre-train.py
-python finetune.py
-python test.py
-'''
+```
