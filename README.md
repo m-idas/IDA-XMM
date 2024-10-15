@@ -1,6 +1,8 @@
-## Running environment
+## Environmental requirements
 ```bash
-pip install transformers torch
+- transformers
+- torch
+- GPU with A100
 ```
 
 ## Quick Start
