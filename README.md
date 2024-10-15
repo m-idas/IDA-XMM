@@ -1,4 +1,10 @@
-### Coming Soon...
+## Quick Start
+
+```
+python pre-train.py
+python finetune.py
+python test.py
+'''
 
 <!--
 **m-idas/M-IDAS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
